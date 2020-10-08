@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #ec715f;
+}
+
+.header-container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 70px;
+  float: left;
+}
+
+div {
+  display: block;
+}
+
+.nav {
+  float: right;
+  line-height: 70px;
+}
+
+.nav-list {
+  float: right;
+  list-style: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.nav-list a {
+  color: #fafafa;
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  height: ;
+}
