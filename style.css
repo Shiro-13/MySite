@@ -173,6 +173,51 @@ header {
   text-align: left;
 }
 
+#profile {
+  background-color: #eceff1;
+}
+
+.profile-container {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.profile-box {
+  width: 1024px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.left-content {
+  width: 50%;
+  float: left;
+}
+
+.my-icon {
+  background-image: url(img/my-icon.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.right-content {
+  width: 50%;
+  float: right;
+}
+
+.profile-title {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.profile-title:first-child {
+  padding-top: 0px;
+}
+
 footer {
   width: 100%;
   height: ;
