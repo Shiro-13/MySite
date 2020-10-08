@@ -20,18 +20,14 @@ header {
   float: left;
 }
 
-div {
-  display: block;
-}
-
 .nav {
   float: right;
   line-height: 70px;
 }
 
 .nav-list {
-  float: right;
   list-style: none;
+  display: inline-block;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -131,12 +127,50 @@ div {
   background-image: url(img/webcamp-mother.png);
 }
 
-.portfolio-image li:nth-child(3n) {
+.portfolio-image :nth-child(3n) {
   padding-right: 0px;
 }
 
-.portfolio-image li:nth-child(-n+3) {
+.portfolio-image :nth-child(-n + 3) {
   padding-top: 0px;
+}
+
+.feature-container {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.strength-box {
+  width: 980px;
+  margin: 0px auto;
+  display: flex;
+}
+
+.strength {
+  width: 320px;
+  text-align: center;
+  padding-right: 10px;
+}
+
+.strength:nth-child(3) {
+  padding-right: 0px;
+}
+
+.strength i {
+  display: inline-block;
+  font-size: 60px;
+  margin: 0px auto;
+}
+
+.strength h3 {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.strength p {
+  font-size: 16px;
+  text-align: left;
 }
 
 footer {
