@@ -39,7 +39,6 @@ header {
 }
 
 #mv {
-  width: 100%;
   height: 650px;
   background-image: url("img/mv.png");
   background-size: cover;
@@ -65,10 +64,11 @@ header {
 .portfolio-container {
   width: 1024px;
   margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .heading {
-  padding-top: 90px;
   text-align: center;
   color: #000000;
   font-size: 32px;
@@ -95,7 +95,6 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-  padding-bottom: 90px;
 }
 
 .portfolio {
@@ -160,7 +159,7 @@ header {
   padding-right: 0px;
 }
 
-.strength i {
+.fas {
   display: inline-block;
   font-size: 60px;
   margin: 0px auto;
@@ -234,12 +233,12 @@ header {
   margin: 0 auto;
 }
 
-.left-content-content {
+.left-contact-content {
   margin: 0 auto;
   width: 200px;
 }
 
-.right-content-content {
+.right-contact-content {
   margin: 0 auto;
   width: 200px;
 }
@@ -252,10 +251,6 @@ header {
 .contact-text {
   font-size: 16px;
   padding-bottom: 20px;
-}
-
-.contact-text:last-child {
-  padding-bottom: 0px;
 }
 
 .right-content i {
@@ -275,4 +270,113 @@ footer {
   text-align: center;
   font-size: 16px;
   color: #fafafa;
+}
+
+/* レスポンシブ対応 */
+
+@media screen and (max-width: 768px) {
+  .header-container,
+  .mv-container,
+  .portfolio-container,
+  .feature-container,
+  .profile-container,
+  .contact-container {
+    width: 90%;
+  }
+
+  #portfolio,
+  #feature,
+  #profile,
+  #contact {
+    padding: 0 5%;
+  }
+
+  header,
+  .logo {
+    height: 50px;
+  }
+
+  .menu-box {
+    float: right;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fafafa;
+    margin-right: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .list-bar {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 5px auto;
+    background-color: #fafafa;
+  }
+
+  .list-bar:first-child {
+    margin-top: 10px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  #mv {
+    background-image: url("img/code.png");
+  }
+
+  .mv-container h1 {
+    font-size: 40px;
+  }
+
+  .mv-container p {
+    font-size: 18px;
+  }
+
+  .portfolio:nth-child(odd) {
+    display: none;
+  }
+  .portfolio {
+    margin-right: 0;
+  }
+  .strength-box {
+    display: none;
+  }
+  .fas {
+    padding-top: 10px;
+  }
+
+  .fas:first-child {
+    padding-top: 0;
+  }
+
+  .profile-box {
+    width: 100%;
+    text-align: center;
+  }
+  .left-content,
+  .right-content {
+    width: 100%;
+    float: none;
+  }
+
+  .contact-box {
+    width: 100%;
+    text-align: center;
+  }
+
+  .left-contact-content,
+  .right-contact-content {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+
+  .right-content i {
+    padding-right: 8px;
+  }
+  .right-content i:last-child {
+    padding-right: 0;
+  }
 }
